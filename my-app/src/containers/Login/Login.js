@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Login.css";
+import {useHistory} from "react-router-dom";
 
 export default function Login() {
+  let histroy = useHistory();
   const [firstName, setfirstName] = useState("");
   const [lastName, setlastName] = useState("");
   const [SSN, setSSN] = useState("");
@@ -44,9 +46,9 @@ export default function Login() {
             onChange={(e) => setSSN(e.target.value)}
           />
         </Form.Group>
-        <Button block size="lg" type="submit" 
-                disabled={!validateForm()} 
-                onClick={() => alert()}>
+        <Button block size="lg" type="submit"
+                disabled={!validateForm()}
+                onClick={() => histroy.push("/Voted")}>
           Login
         </Button>
       </Form>
