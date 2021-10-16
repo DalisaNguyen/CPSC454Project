@@ -44,7 +44,9 @@ export default function Login() {
             onChange={(e) => setSSN(e.target.value)}
           />
         </Form.Group>
-        <Button block size="lg" type="submit" disabled={!validateForm()}>
+        <Button block size="lg" type="submit" 
+                disabled={!validateForm()} 
+                onClick={() => alert()}>
           Login
         </Button>
       </Form>
