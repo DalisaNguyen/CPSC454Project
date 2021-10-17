@@ -48,7 +48,7 @@ export default function Login() {
         </Form.Group>
         <Button block size="lg" type="submit"
                 disabled={!validateForm()}
-                onClick={() => histroy.push("/Voted")}>
+                onClick={() => histroy.push("/candidates")}>
           Login
         </Button>
       </Form>
