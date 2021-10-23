@@ -1,10 +1,15 @@
 @media all and (min-width: 480px) {
     .Login {
       padding: 60px 0;
+      background-image: linear-gradient(violet, lightblue, white);
     }
   
     .Login form {
       margin: 0 auto;
       max-width: 320px;
+    }
+
+    .heading{
+      text-align: center;
     }
   }

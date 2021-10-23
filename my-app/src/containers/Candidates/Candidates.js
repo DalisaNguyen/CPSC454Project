@@ -7,26 +7,37 @@ import {useHistory} from "react-router-dom";
 export default function Candidates(){
     let histroy = useHistory();
 
+    const handleSubmit = (name) => {
+        console.log(`candidate ${name}`);
+    };
+
     return (
-        <div className="Candidate">
+        <div className="Candidates">
+            <br />
             <br />
             <CardGroup>
-                <div class="card">
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>Candidate 1</Card.Title>
-                            <Card.Text>
-                                Description for Candidate 1
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            
-                        </Card.Footer>
-                    </Card>
-                </div>
-                <Card>
+                <Card className="cursor" onClick={() => handleSubmit("cand1")}>
+                    <Card.Body>
+                        <Card.Title>Candidate 1</Card.Title>
+                        <Card.Subtitle>
+                            Card1 subtitle
+                        </Card.Subtitle>
+                        <br />
+                        <Card.Text>
+                            Description for Candidate 1
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        
+                    </Card.Footer>
+                </Card>
+                <Card className="cursor" onClick={() => handleSubmit("cand2")}>
                     <Card.Body>
                         <Card.Title>Candidate 2</Card.Title>
+                        <Card.Subtitle>
+                            Card2 subtitle
+                        </Card.Subtitle>
+                        <br />
                         <Card.Text>
                             Description for Candidate 2
                         </Card.Text>
@@ -35,9 +46,13 @@ export default function Candidates(){
                     
                     </Card.Footer>
                 </Card>
-                <Card>
+                <Card className="cursor" onClick={() => handleSubmit("cand3")}>
                     <Card.Body>
                         <Card.Title>Candidate 3</Card.Title>
+                        <Card.Subtitle>
+                            Card3 subtitle
+                        </Card.Subtitle>
+                        <br />
                         <Card.Text>
                             Description for Candidate 3
                         </Card.Text>
@@ -48,10 +63,15 @@ export default function Candidates(){
                 </Card>
             </CardGroup>
             <br />
+            <br />
             <CardGroup>
-                <Card>
+                <Card className="cursor" onClick={() => handleSubmit("cand4")}>
                     <Card.Body>
                         <Card.Title>Candidate 4</Card.Title>
+                        <Card.Subtitle>
+                            Card4 subtitle
+                        </Card.Subtitle>
+                        <br />
                         <Card.Text>
                             Description for Candidate 4
                         </Card.Text>
@@ -60,9 +80,13 @@ export default function Candidates(){
                         
                     </Card.Footer>
                 </Card>
-                <Card>
+                <Card className="cursor" onClick={() => handleSubmit("cand5")}>
                     <Card.Body>
                         <Card.Title>Candidate 5</Card.Title>
+                        <Card.Subtitle>
+                            Card5 subtitle
+                        </Card.Subtitle>
+                        <br />
                         <Card.Text>
                             Description for Candidate 5
                         </Card.Text>
@@ -71,9 +95,13 @@ export default function Candidates(){
                    
                     </Card.Footer>
                 </Card>
-                <Card>
+                <Card className="cursor" onClick={() => handleSubmit("cand6")}>
                     <Card.Body>
                         <Card.Title>Candidate 6</Card.Title>
+                        <Card.Subtitle>
+                            Card6 subtitle
+                        </Card.Subtitle>
+                        <br />
                         <Card.Text>
                             Description for Candidate 6
                         </Card.Text>
@@ -84,10 +112,15 @@ export default function Candidates(){
                 </Card>
             </CardGroup>
             <br />
+            <br />
             <CardGroup>
-                <Card>
+                <Card className="cursor" onClick={() => handleSubmit("cand7")}>
                     <Card.Body>
                         <Card.Title>Candidate 7</Card.Title>
+                        <Card.Subtitle>
+                            Card7 subtitle
+                        </Card.Subtitle>
+                        <br />
                         <Card.Text>
                             Description for Candidate 7
                         </Card.Text>
@@ -96,9 +129,13 @@ export default function Candidates(){
                         
                     </Card.Footer>
                 </Card>
-                <Card>
+                <Card className="cursor" onClick={() => handleSubmit("cand8")}>
                     <Card.Body>
                         <Card.Title>Candidate 8</Card.Title>
+                        <Card.Subtitle>
+                            Card8 subtitle
+                        </Card.Subtitle>
+                        <br />
                         <Card.Text>
                             Description for Candidate 8
                         </Card.Text>
@@ -107,9 +144,13 @@ export default function Candidates(){
                    
                     </Card.Footer>
                 </Card>
-                <Card>
+                <Card className="cursor" onClick={() => handleSubmit("cand9")}>
                     <Card.Body>
                         <Card.Title>Candidate 9</Card.Title>
+                        <Card.Subtitle>
+                            Card9 subtitle
+                        </Card.Subtitle>
+                        <br />
                         <Card.Text>
                             Description for Candidate 9
                         </Card.Text>
