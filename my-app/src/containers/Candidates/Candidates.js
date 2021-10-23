@@ -14,6 +14,7 @@ export default function Candidates(){
     return (
         <div className="Candidates">
             <br />
+            <h1 className="heading">Candidates</h1>
             <br />
             <CardGroup>
                 <Card className="cursor" onClick={() => handleSubmit("cand1")}>

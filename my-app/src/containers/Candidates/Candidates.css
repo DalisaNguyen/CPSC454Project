@@ -4,7 +4,10 @@
     }
     .cursor{
       cursor: pointer;
-      
+    }
+
+    .heading{
+      text-align: center;
     }
     
   }
