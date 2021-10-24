@@ -1,13 +1,16 @@
 @media all and (min-width: 480px) {
-    .Candidates{
-      background-image: linear-gradient(violet, lightblue, white);
-    }
-    .cursor{
-      cursor: pointer;
-    }
-
-    .heading{
-      text-align: center;
-    }
-    
+  .Candidates {
+    background-image: linear-gradient(violet, lightblue, white);
   }
+
+  .cursor {
+    cursor: pointer;
+    width: 350px;
+    margin-bottom: 40px;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+}
