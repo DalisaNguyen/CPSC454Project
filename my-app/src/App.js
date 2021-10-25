@@ -3,6 +3,8 @@ import Login from "./containers/Login/Login";
 import "./containers/Login/Login.css";
 import Candidates from "./containers/Candidates/Candidates";
 import Voted from "./containers/Voted/Voted";
+import Confirmed from "./containers/Confirmed/Confirmed";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -26,15 +28,23 @@ function App() {
       <header className="App-header">
         <Router>
           <Switch>
+
             <Route exact path="/candidates">
               <Candidates candidateNames={candidateName} handleCandidate={handleCandidate}/>
             </Route>
+
             <Route exact path="/voted">
               <Voted candidateNames={candidateName}/>
             </Route>
+
+            <Route exact path="/confirmed">
+              <Confirmed/>
+            </Route>
+            
             <Route path="/">
               <Login />
             </Route>
+
           </Switch>
         </Router>
       </header>

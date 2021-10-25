@@ -1,6 +1,6 @@
 import React from "react";
 import "./Candidates.css";
-import { Card, CardGroup, ToggleButton } from "react-bootstrap";
+import { Card, ToggleButton } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { useHistory } from "react-router-dom";
 
@@ -57,24 +57,11 @@ export default function Candidates(props) {
 
   let history = useHistory();
 
-  const handleSubmit = (name) => {
-    // console.log(`candidate ${name}`);
-  };
-
   return (
     <div className="Candidates">
       <br />
       <h1 className="heading">Candidates</h1>
       <br />
-      {/* <ToggleButtonGroup 
-                onChange={(value) => {
-                    console.log(value);
-                    handleCandidate("candidates_name", value);
-                }}
-                defaultValue={candidateNames.candidates_name}
-                name="candidates_name"
-                type="checkbox"
-        > */}
       <div
         style={{
           width: "95%",
@@ -102,7 +89,6 @@ export default function Candidates(props) {
                     <Card.Text>{candidate.description}</Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    {/* <ToggleButton id="cand1" value="cand1"/> */}
                     <ToggleButton
                       id={candidate.candidate_name}
                       value={candidate.candidate_name}
@@ -113,12 +99,6 @@ export default function Candidates(props) {
                   </Card.Footer>
                 </Card>
               </div>
-              {/* {(index + 1) % 3 === 0 && (
-                <>
-                  <br />
-                  <br />
-                </>
-              )} */}
             </>
           );
         })}
@@ -132,6 +112,8 @@ export default function Candidates(props) {
       >
         Next
       </Button>
+      <br />
+      <br />
     </div>
   );
 }

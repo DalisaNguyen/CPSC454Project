@@ -1,0 +1,15 @@
+@media all {
+  .heading{
+      text-align: center;
+  }
+
+  .subheading{
+    text-align: center;
+  }
+
+  .Confirmed{
+      padding: 60px 0;
+      background-image: linear-gradient(violet, lightblue, white);   
+  }
+
+}

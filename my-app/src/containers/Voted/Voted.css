@@ -1,0 +1,14 @@
+@media all and (min-width: 480px) {
+    .heading{
+        text-align: center;
+    }
+
+    .Voted{
+        padding: 60px 0;
+        background-image: linear-gradient(violet, lightblue, white);   
+    }
+
+    .text{
+        text-align: center;
+    }
+  }
