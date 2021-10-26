@@ -9,7 +9,7 @@ export default function Confirmed() {
   return (
       <div className="Confirmed">
         <br/>
-        <h1 className="heading"> Congratulations! </h1>
+        <h1 className="congrats"> Congratulations! </h1>
         <br/>
         <h2 className="subheading">Thank you for voting!</h2>
         <h2 className="subheading">Have a great day.</h2>
@@ -23,7 +23,7 @@ export default function Confirmed() {
           }}
         >
           <Button block size="lg" type="submit" onClick={() => histroy.push("/login")}>
-              Login page
+              Logout
           </Button>
         </div>
 

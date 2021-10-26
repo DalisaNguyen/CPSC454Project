@@ -60,7 +60,7 @@ export default function Candidates(props) {
   return (
     <div className="Candidates">
       <br />
-      <h1 className="heading">Candidates</h1>
+      <h1 className="candidatesHeading">Candidates</h1>
       <br />
       <div
         style={{

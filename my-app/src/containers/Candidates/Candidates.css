@@ -9,8 +9,10 @@
     margin-bottom: 40px;
   }
 
-  .heading {
+  .candidatesHeading {
     text-align: center;
+    font-size: 60px;
+    text-shadow: 3px 3px 3px #837f7f;
   }
 
 }

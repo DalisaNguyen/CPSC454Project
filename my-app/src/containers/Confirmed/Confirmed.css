@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
 @media all {
-  .heading{
+  .congrats{
       text-align: center;
+      font-family: "Sofia", sans-serif; 
+      font-size: 90px;
+      text-shadow: 3px 3px 3px #ababab;
   }
 
   .subheading{
     text-align: center;
+    font-style: italic;
   }
 
   .Confirmed{
