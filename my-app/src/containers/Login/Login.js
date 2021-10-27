@@ -20,7 +20,7 @@ export default function Login() {
 
   return (
     <div className="Login">
-      <h1 className="heading">Login here to Vote!</h1>
+      <h1 className="loginHeading">Login Here to Vote!</h1>
       <br/>
       <br/>
       <Form onSubmit={handleSubmit}>

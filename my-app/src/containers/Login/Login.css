@@ -1,4 +1,4 @@
-@media all and (min-width: 480px) {
+@media all {
     .Login {
       padding: 60px 0;
       background-image: linear-gradient(violet, lightblue, white);
@@ -9,7 +9,9 @@
       max-width: 320px;
     }
 
-    .heading{
-      text-align: center;
+    .loginHeading{
+      text-align: center; 
+      font-size: 60px;
+      text-shadow: 3px 3px 3px #837f7f;
     }
   }

@@ -1,0 +1,32 @@
+@media all and (min-width: 480px) {
+    .votedHeading{
+        text-align: center;
+        font-size: 60px;
+        text-shadow: 3px 3px 3px #837f7f;
+    }
+
+    .Voted{
+        padding: 60px 0;
+        background-image: linear-gradient(violet, lightblue, white);   
+    }
+
+    .votedFor{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .votedCandidate{
+        text-align: center; 
+        text-shadow: 2px 2px 2px #837f7f;
+    }
+
+    .additionalText{
+        text-align: center;
+        color: rgb(240, 22, 22);
+    }
+
+    .note{
+        text-align: center;
+        color: red;
+    }
+  }
