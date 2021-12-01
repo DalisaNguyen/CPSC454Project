@@ -4,7 +4,30 @@ import Button from "react-bootstrap/Button";
 import "./Login.css";
 import {useHistory} from "react-router-dom";
 
+import {fetchData, putData} from '../../AwsFunctions.js';
+
 export default function Login() {
+
+  // For the DynamoDB
+  const fetchDataFormDynamoDB = async () => {
+    await fetchData('users')
+  }
+
+// Use this for canidates later:
+
+  // const addDatatoDynamoDB = async () => {
+  //   const userData = {
+  //     SSN: "123456789",
+  //     Fname: "Erik",
+  //     Lname: "Truong"
+  //   }
+  //   await putData('users', userData)
+  // }
+  // <Button
+  // onClick={() => addDatatoDynamoDB()}>
+  // Put
+  // </Button>
+
   let histroy = useHistory();
   const [firstName, setfirstName] = useState("");
   const [lastName, setlastName] = useState("");
@@ -52,7 +75,9 @@ export default function Login() {
         <br />
         <Button block size="lg" type="submit"
                 disabled={!validateForm()}
-                onClick={() => histroy.push("/candidates")}>
+                  //onClick={() => histroy.push("/candidates")}>
+                  onClick={() => fetchDataFormDynamoDB()}>
+
           Login
         </Button>
       </Form>
